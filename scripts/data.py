@@ -36,13 +36,13 @@ def read_data(noise_type, noise_rate, dataset, data_aug=False, mode="risk_min"):
     if dataset == "mnist":
         num_class = 10
         if not data_aug:
-            dat_train = torchvision.datasets.MNIST('./data', train=True, download=True,
+            dat_train = torchvision.datasets.MNIST('../data', train=True, download=True,
                                                    transform=transforms.Compose(
                                                        [transforms.ToTensor(),
                                                         transforms.Normalize((0.1307, ),
                                                                              (0.3081, ))]))
 
-            dat_test = torchvision.datasets.MNIST('./data', train=False, download=True,
+            dat_test = torchvision.datasets.MNIST('../data', train=False, download=True,
                                                   transform=transforms.Compose(
                                                       [transforms.ToTensor(),
                                                        transforms.Normalize((0.1307, ),
@@ -66,7 +66,7 @@ def read_data(noise_type, noise_rate, dataset, data_aug=False, mode="risk_min"):
         # data_aug = True
 
         if not data_aug:
-            dat_train = torchvision.datasets.CIFAR10('./data', train=True, download=True,
+            dat_train = torchvision.datasets.CIFAR10('../data', train=True, download=True,
                                                      transform=transforms.Compose(
                                                          [transforms.ToTensor(),
                                                           transforms.Normalize((0.4914, 0.4822,
@@ -74,7 +74,7 @@ def read_data(noise_type, noise_rate, dataset, data_aug=False, mode="risk_min"):
                                                                                (0.2023, 0.1994,
                                                                                 0.2010))]))
 
-            dat_test = torchvision.datasets.CIFAR10('./data', train=False, download=True,
+            dat_test = torchvision.datasets.CIFAR10('../data', train=False, download=True,
                                                     transform=transforms.Compose(
                                                         [transforms.ToTensor(),
                                                          transforms.Normalize((0.4914, 0.4822,
@@ -85,7 +85,7 @@ def read_data(noise_type, noise_rate, dataset, data_aug=False, mode="risk_min"):
             print("\nDATA AUGMENTATION DISABLED...\n")
 
         else:
-            dat_train = torchvision.datasets.CIFAR10('./data', train=True, download=True,
+            dat_train = torchvision.datasets.CIFAR10('../data', train=True, download=True,
                                                      transform=transforms.Compose(
                                                          [transforms.RandomCrop(32, padding=4),
                                                           transforms.RandomHorizontalFlip(),
@@ -95,7 +95,7 @@ def read_data(noise_type, noise_rate, dataset, data_aug=False, mode="risk_min"):
                                                                                (0.2023, 0.1994,
                                                                                 0.2010))]))
 
-            # dat_train = torchvision.datasets.CIFAR10('./data', train=True, download=True,
+            # dat_train = torchvision.datasets.CIFAR10('../data', train=True, download=True,
             #                                          transform=transforms.Compose(
             #                                              [transforms.CenterCrop(28),
             #                                               transforms.RandomHorizontalFlip(),
@@ -105,7 +105,7 @@ def read_data(noise_type, noise_rate, dataset, data_aug=False, mode="risk_min"):
             #                                                                    (0.2023, 0.1994,
             #                                                                     0.2010))]))
 
-            dat_test = torchvision.datasets.CIFAR10('./data', train=False, download=True,
+            dat_test = torchvision.datasets.CIFAR10('../data', train=False, download=True,
                                                     transform=transforms.Compose(
                                                         [transforms.ToTensor(),
                                                          transforms.Normalize((0.4914,
