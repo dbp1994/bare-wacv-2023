@@ -30,7 +30,8 @@ For example,
 
 The following citation can be used:
 
-```@inproceedings{bare_wacv_2023,
+```
+@inproceedings{bare_wacv_2023,
   title={Adaptive Sample Selection for Robust Learning under Label Noise,
   author={Patel, Deep and Sastry, P S},
   booktitle={WACV},
