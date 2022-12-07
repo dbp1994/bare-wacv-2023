@@ -16,4 +16,4 @@ This project is organized into folders:
 
 ## Running the experiments
 ---
-```cd``` into the scripts folder and run ```algo.py``` where ```algo```  $\in$ {BARE, MR, MN, CoT, CoT+, CL, CCE}
+```cd``` into the scripts folder and run ```algo.py``` where ```algo```  $\in $ {BARE, MR, MN, CoT, CoT+, CL, CCE}
