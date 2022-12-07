@@ -35,4 +35,5 @@ The following citation can be used:
   author={Patel, Deep and Sastry, P S},
   booktitle={WACV},
   year={2023}
-  }```
+  }
+```
