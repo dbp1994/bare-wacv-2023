@@ -2,8 +2,9 @@
 
 ## Installation
 Make a copy of this repo (e.g. with git clone), ```cd``` into the root folder of the repo, and run:
-
-> pip install -e .
+```
+pip install -e .
+```
 
 ## Requirements
 - PyTorch >= 1.3
