@@ -1,2 +1,4 @@
-# bare-wacv-2023
-Code for "Adaptive Sample Selection for Robust Learning under Label Noise" accepted at IEEE/CVF WACV 2023.
+# Adaptive Sample Selection for Robust Learning under Label Noise (IEEE/CVF WACV 2023)
+
+The repository structure is as follows:
+
