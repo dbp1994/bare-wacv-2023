@@ -29,9 +29,9 @@ For example,
 ## Reference
 
 The following citation can be used:
-> @inproceedings{bare_wacv_2023,<br>
-  title={Adaptive Sample Selection for Robust Learning under Label Noise,
-  author={Patel, Deep and Sastry, P S},
-  booktitle={WACV},
+```@inproceedings{bare_wacv_2023,<br>
+  title={Adaptive Sample Selection for Robust Learning under Label Noise,<br>
+  author={Patel, Deep and Sastry, P S},<br>
+  booktitle={WACV},<br>
   year={2023}
-  }
+  }```
