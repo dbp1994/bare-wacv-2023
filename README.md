@@ -37,6 +37,14 @@ python batch_rewgt.py --dataset mnist --noise_rate 0.4 --noise_type sym --loss_n
 
 This will train the neural network with CCE loss on un-augmented MNIST dataset which will be corrupted with 40% symmetric label noise. The training will be carried for a batch-size of 128, 200 epochs and a total of 5 runs.
 
+### Running BARE on Clothing-1M and Food-101N
+
+Use the files ```batch_rewgt_clothing1M.py``` and ```batch_rewgt_food101N.py``` instead of ```batch_rewgt.py```. Ensure that the ```Clothing-1M``` and ```Food-101N``` data resides in the ```data``` folder.
+
+```
+python batch_rewgt_clothing1M.py --loss_name cce --batch_size 256 --num_epoch 15 --num_runs 1
+python batch_rewgt_food101N.py --loss_name cce --batch_size 256 --num_epoch 20 --num_runs 1
+```
 
 ## Reference
 
