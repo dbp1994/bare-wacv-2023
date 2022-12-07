@@ -1,6 +1,5 @@
 # Adaptive Sample Selection for Robust Learning under Label Noise (IEEE/CVF WACV 2023)
 ---
-
 ## Installation
 ---
 Make a copy of this repo (e.g. with git clone), ```cd``` into the root folder of the repo, and run:
