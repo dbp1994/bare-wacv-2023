@@ -15,7 +15,7 @@ pip install -e .
 This project is organized into folders:
 - ```data``` should contain all the dataset files
 - ```scripts``` contain scripts for all the algorithms
-- ```results_pkl``` should contain all the output pickle files, checkpoints, etc.
+- ```results``` should contain all the output pickle files, checkpoints, etc.
 
 ## Running the experiments
 ```cd``` into the scripts folder and run ```algo.py``` where ```algo```  is the algorithm used for training.
