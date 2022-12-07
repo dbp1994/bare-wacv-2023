@@ -1,7 +1,6 @@
 # Adaptive Sample Selection for Robust Learning under Label Noise (IEEE/CVF WACV 2023) [`Paper`](https://arxiv.org/abs/2106.15292)
 
 ## Installation
-
 Make a copy of this repo (e.g. with git clone), ```cd``` into the root folder of the repo, and run:
 
 > pip install -e .
@@ -12,17 +11,15 @@ Make a copy of this repo (e.g. with git clone), ```cd``` into the root folder of
 - tqdm, numpy-indexed, etc (which can be easily installed via pip)
 
 ## Organization
-
 This project is organized into folders:
 - ```data``` should contain all the dataset files
 - ```scripts``` contain scripts for all the algorithms
 - ```results``` should contain all the output pickle files, checkpoints, etc.
 
 ## Running the experiments
-
 ```cd``` into the scripts folder and run ```algo.py``` where ```algo```  is the algorithm used for training.
 
-For the sake of completeness, filenames for each of the algorithms (names as per convention in the paper) are as follows:
+Filenames for the algorithms (naming convention from paper):
 1. BARE - ```batch_rewgt.py```
 2. MR - ```meta_ren.py```
 3. MN - ```meta_net.py```
