@@ -1,4 +1,4 @@
-# Adaptive Sample Selection for Robust Learning under Label Noise, _IEEE/CVF WACV 2023_ [`Paper`](https://arxiv.org/abs/2106.15292)
+# Adaptive Sample Selection for Robust Learning under Label Noise (IEEE/CVF WACV 2023) [`Paper`](https://arxiv.org/abs/2106.15292)
 
 ## Installation
 
