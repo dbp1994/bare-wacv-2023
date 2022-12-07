@@ -3,7 +3,7 @@
 
 ## Installation
 ---
-Make a copy of this repo (e.g. with git clone), cd into the root folder of the repo, and run:
+Make a copy of this repo (e.g. with git clone), ```cd``` into the root folder of the repo, and run:
 
 > pip install -e .
 
@@ -11,8 +11,12 @@ Make a copy of this repo (e.g. with git clone), cd into the root folder of the r
 ---
 This project is organized into folders:
 - ```data``` should contain all the dataset files
-- ```scripts``` contain scripts for all the algorithms (BARE, MR, MN, CoT, CoT+, CL, and CCE)
+- ```scripts``` contain scripts for all the algorithms (```BARE```, ```MR```, ```MN```, ```CoT```, ```CoT+```, ```CL```, and ```CCE```)
 - ```results``` should contain all the output pickle files, checkpoints, etc.
 
 ## Running the analysis
 ---
+```cd``` into the scripts folder and run ```algo.py``` where ```algo``` = $$\begin{cases}
+                                                                             BARE,\\
+                                                                             MR, \\
+                                                                             \end{cases}$$
