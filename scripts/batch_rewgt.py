@@ -92,7 +92,8 @@ def batch_rewgt_train(dat_loader, net):
 
 def test(data_loader, net, run, use_best=False):
 
-    loss_test = 0.
+    loss_test_loc = 0.
+    acc_test_loc = 0.
     correct = 0
 
     net.eval()
@@ -101,7 +102,7 @@ def test(data_loader, net, run, use_best=False):
         for batch_id, (x, y) in enumerate(data_loader):
             if use_best == True:
                 # load best model weights
-                net.load_state_dict(torch.load(chkpt_path + f"{MODE}-{DATASET}-{loss_name}-\
+                net.load_state_dict(torch.load(chkpt_path + f"{MODE}-{DATASET}-{LOSS_NAME}-\
                     {NOISE_TYPE}-nr-0{str(int(NOISE_RATE * 10))}-mdl-wts-run-{str(run)}.pt"))
                 net = net.to(DEVICE)
 
@@ -112,12 +113,12 @@ def test(data_loader, net, run, use_best=False):
             pred = torch.argmax(pred_prob, dim=1)
 
             loss_batch, _ = loss_fn(output, y)
-            loss_test += torch.mean(loss_batch).item()
+            loss_test_loc += torch.mean(loss_batch).item()
             correct += (pred.eq(y.to(DEVICE))).sum().item()
             batch_cnt = batch_id + 1
-    loss_test /= batch_cnt
-    acc_test = 100.*correct/len(data_loader.dataset)
-    return loss_test, acc_test
+    loss_test_loc /= batch_cnt
+    acc_test_loc = 100.*correct/len(data_loader.dataset)
+    return loss_test_loc, acc_test_loc
 
 
 # Model
