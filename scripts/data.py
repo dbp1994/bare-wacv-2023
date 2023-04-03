@@ -206,6 +206,11 @@ def read_data(noise_type, noise_rate, dataset, data_aug=False, mode="risk_min"):
 
         # Pick equal no. clean samples from each class for val. set
         if dataset in ["mnist", "cifar10"]:
+            X_train, X_val, y_train, y_val = model_selection.train_test_split(X_temp,
+                                                                              y_temp,
+                                                                              test_size=0.2,
+                                                                              random_state=42)
+            
             for i in range(num_class):
                 idx_cls_tmp = np.where(y_val == i)[0]
                 rng = np.random.default_rng()
