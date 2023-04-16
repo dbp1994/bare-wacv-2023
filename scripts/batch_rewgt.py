@@ -181,7 +181,7 @@ class CNN(nn.Module):
         self.lin_lay1 = nn.Linear(256, n_outputs)
     def forward(self, x):
         # inp = x
-        inp = self.c1(x)
+        inp = self.conv_lay1(x)
         inp = F.relu(call_batch_norm(self.conv_lay1, inp))
         # inp = self.conv_lay2(inp)
         # inp = F.relu(call_batch_norm(self.bch_norm_lay2, inp))
